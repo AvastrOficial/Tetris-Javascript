@@ -1,6 +1,6 @@
 # Tetris-Javascript
 
-# Lo que se ocupo en el codigo fue :
+ Lo que se ocupo en el codigo fue :
 
 Creación del tablero de juego: Se utiliza HTML y CSS para crear un área en la página web donde se mostrará el juego. Este espacio se divide en celdas que representarán las posiciones donde caerán y se colocarán los tetrominós.
 
