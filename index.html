@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        body {
+            padding-bottom: 70px;
+          zoom: 60%;
+        }
+    </style>
+ 
+</head>
+<body>
+<main>
+<center>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+    <h1 onclick="changeColor()" class="auto-change">TETRIS - BSZ</h1>     
+              
+              
+              <div class="retangulo" id="fondoRectangulo">
+                <h2 id="puntaje"></h2>
+        
+            <div class="col-12 text-center">
+
+                <canvas id="canvas"></canvas>
+
+                <div class="mt-2">
+<a href="https://github.com/tu_usuario_de_GitHub" target="_blank" rel="noopener noreferrer" class="button-link">
+    <button class="github-button">
+        <i class="fab fa-github"></i>
+        Ir a GitHub
+    </button>
+</a>
+     <button id="btnIniciar" class="btn btn-success"><i class="fas fa-play"></i></button>
+    <button hidden id="btnPausar" class="btn btn-success"><i class="fas fa-pause"></i></button>
+    <button id="btnIzquierda" class="btn btn-success"><i class="fas fa-arrow-left"></i></button>
+    <button id="btnAbajo" class="btn btn-success"><i class="fas fa-arrow-down"></i></button>
+    <button id="btnDerecha" class="btn btn-success"><i class="fas fa-arrow-right"></i></button>
+    <button id="btnRotar" class="btn btn-success"><i class="fas fa-redo"></i></button>
+    <button class="btn btn-danger" id="reset"><i class="fas fa-sync-alt"></i> Reset</button>
+                  
+ <button id="toggleMusic" onclick="toggleMusic()">
+        <i id="musicIcon" class="fas fa-music"></i>
+    </button>
+                  
+<button id="decreaseVolume" onclick="adjustVolume(-0.1)">
+    <i class="fas fa-minus"></i>
+</button>
+
+<button id="increaseVolume" onclick="adjustVolume(0.1)">
+    <i class="fas fa-plus"></i>
+</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</main>
+  
+  
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/tetris.js"></script>
+</html>
